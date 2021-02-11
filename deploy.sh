@@ -2,6 +2,11 @@
 # abort on errors
 set -e
 
+# Make sure repo is updated with recent changes
+git add .
+git commit -m 'automated push'
+git push -f git@github.com:atin-a/adopt-pet.git
+
 # build
 
 npm run build

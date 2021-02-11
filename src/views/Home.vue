@@ -3,9 +3,14 @@
     <h1>
       Adopt a new best friend.
     </h1>
-    {{ getAllCats.length }}
-    {{ getAllDogs.length }}
-    {{ animalsCount }}
+    <p>
+      Cats: {{ getAllCats.length }} | 
+      Dogs: {{ getAllDogs.length }} | 
+      Total: {{ animalsCount }}
+    </p>
+    
+    
+    
     <button @click="togglePetForm" class="btn btn-primary">Add New Pet</button>
 
     <b-form @submit.prevent="handleSubmit" v-if="showPetForm">
